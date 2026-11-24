@@ -2,6 +2,7 @@
   "name": "home-prices",
   "private": true,
   "type": "module",
-  "scripts": { "fetch": "node scripts/fetch-prices.mjs" },
-  "dependencies": { "basic-ftp": "^5.0.5" }
+  "scripts": {
+    "fetch": "node scripts/fetch-prices.mjs"
+  }
 }
