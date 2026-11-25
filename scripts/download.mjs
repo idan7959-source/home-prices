@@ -4,10 +4,12 @@
 import { mkdirSync, writeFileSync } from 'node:fs'
 import { gunzipSync } from 'node:zlib'
 
+// Since 2026-11-25 the household compares Rami Levy only. To bring a chain back, uncomment its line.
+// (Osher Ad publishes its daily file only around 08:00 Israel time, after this job runs.)
 export const STORES = [
   { key: 'rami', chain: 'רמי לוי', user: 'RamiLevi', chainId: '7290058140886', store: '034' },
-  { key: 'osher', chain: 'אושר עד', user: 'osherad', chainId: '7290103152017', store: '010' },
-  { key: 'yoh', chain: 'יוחננוף', user: 'yohananof', chainId: '7290803800003', store: '021' },
+  // { key: 'osher', chain: 'אושר עד', user: 'osherad', chainId: '7290103152017', store: '010' },
+  // { key: 'yoh', chain: 'יוחננוף', user: 'yohananof', chainId: '7290803800003', store: '021' },
 ]
 const BASE = 'https://url.publishedprices.co.il'
 
